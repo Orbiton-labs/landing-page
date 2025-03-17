@@ -6,12 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper";
 import { useRef, useState } from "react";
+//@ts-ignore
+import "swiper/css";
 
 const SwapSection = () => {
   const swiperRef = useRef<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div id="swap" className="flex items-center justify-between gap-4 lg:gap-[75px] min-h-screen">
+    <div
+      id="swap"
+      className="flex items-center justify-between gap-4 lg:gap-[75px] min-h-screen"
+    >
       <div className="text-white flex-shrink-0 flex items-center justify-start">
         <button
           disabled={activeIndex === 0}
@@ -49,11 +54,14 @@ const SwapSection = () => {
                   Trade Crypto with Confidence on Our Growing Platform
                 </div>
                 <div className="mt-10 lg:block hidden">
-                  <ButtonPrimary extendClassName="py-5 px-[30px] w-auto" isLarge/>
+                  <ButtonPrimary
+                    extendClassName="py-5 px-[30px] w-auto"
+                    isLarge
+                  />
                 </div>
               </div>
               <div className="mt-[66px]">
-                <img src={iphoneImg2} alt="Logo" className="mx-auto lg:mx-0"/>
+                <img src={iphoneImg2} alt="Logo" className="mx-auto lg:mx-0" />
               </div>
             </div>
           </SwiperSlide>
