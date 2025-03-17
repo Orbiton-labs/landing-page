@@ -11,6 +11,9 @@ const ButtonPrimary: FC<
   return (
     <button
       className={`flex w-[124px] h-[32px] items-center justify-center px-4 py-2 bg-bgButtonType rounded-lg ${extendClassName}`}
+      onClick={() => {
+        window.open("https://t.me/orbiton_swap_bot", "_blank");
+      }}
     >
       {!children ? (
         <img src={isLarge ? textBtnHeader2 : textBtnHeader} alt="Logo" />
