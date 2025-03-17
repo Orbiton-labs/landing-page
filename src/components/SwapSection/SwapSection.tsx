@@ -5,7 +5,6 @@ import ButtonPrimary from "../ButtonPrimary/ButtonPrimary";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar } from "swiper/modules";
 import { Swiper as SwiperType } from "swiper";
-import "swiper/css";
 import { useRef, useState } from "react";
 
 const SwapSection = () => {
