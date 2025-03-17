@@ -1,4 +1,4 @@
-import textBtnHeader from "@/assets/images/textButtonheader.png";
+import textBtnHeader from "@/assets/images/textButtonHeader.png";
 import textBtnHeader2 from "@/assets/images/textButtonHeaderSize2.png";
 import { FC, PropsWithChildren } from "react";
 
