@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { scroller } from "react-scroll";
 import ArrowDown from "@/assets/images/ArrowDown.png";
 import ArrowUp from "@/assets/images/ArrowUp.png";
-import { useMotionValueEvent, useScroll } from "motion/react";
+// import { useMotionValueEvent, useScroll } from "motion/react";
 
 const sections = ["home", "about", "swap"];
 

@@ -1,4 +1,4 @@
-import LightPlaceFooter from "@/assets/images/lightPlaceFooter.png";
+// import LightPlaceFooter from "@/assets/images/lightPlaceFooter.png";
 
 const Footer = () => {
   return (
