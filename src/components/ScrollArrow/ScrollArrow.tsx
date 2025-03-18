@@ -10,10 +10,9 @@ const ScrollArrow = () => {
   const [isAtBottom, setIsAtBottom] = useState<boolean>(false);
   // const [scrolling, setScrolling] = useState(false);
 
-
   const handleScroll = () => {
     if (isAtBottom) {
-      scroller.scrollTo("home", { smooth: true, duration: 800, spy: true });
+      scroller.scrollTo("home", { smooth: true, duration: 150, spy: true });
     } else {
       const currentSectionIndex = sections.findIndex((id) => {
         const element = document.getElementById(id);
@@ -26,14 +25,14 @@ const ScrollArrow = () => {
       if (nextSection === "swap") {
         scroller.scrollTo(nextSection, {
           smooth: true,
-          duration: 800,
+          duration: 150,
           spy: true,
           offset: 150,
         });
       } else {
         scroller.scrollTo(nextSection, {
           smooth: true,
-          duration: 800,
+          duration: 150,
           spy: true,
         });
       }
